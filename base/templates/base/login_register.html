@@ -1,6 +1,4 @@
-{% extends 'main.html' %}
-
-{% block content %}
+{% extends 'main.html' %} {% block content %}
 
 <main class="auth layout">
   {% if page == 'login' %}
@@ -18,7 +16,12 @@
           {% csrf_token %}
           <div class="form__group form__group">
             <label for="email">Email</label>
-            <input id="email" name="email" type="text" placeholder="e.g. john_doe" />
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="e.g. john_doe"
+            />
           </div>
           <div class="form__group">
             <label for="password">Password</label>
@@ -72,9 +75,7 @@
         <h2 class="auth__tagline">Find your study partner</h2>
 
         <form class="form" action="" method="POST">
-          {% csrf_token %}
-
-          {% for field in form %}
+          {% csrf_token %} {% for field in form %}
           <div class="form__group form__group">
             <label for="user_name">{{ field.label }}</label>
             {{ field }}
@@ -110,6 +111,5 @@
     </div>
   </div>
   {% endif %}
-
 </main>
 {% endblock content %}
