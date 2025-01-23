@@ -4,4 +4,4 @@ line-length = 88
 select = ["E", "F", "W", "I"]
 fixable = ["E", "F", "I"]
 unfixable = []
-exclude = [".venv", "migrations"]
+exclude = ["venv", "migrations"]

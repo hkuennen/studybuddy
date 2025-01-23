@@ -3,11 +3,8 @@
 *.pot
 *.pyc
 __pycache__/
-.py[cod]
-local_settings.py
 db.sqlite3
 *.log
-/.vscode
 *.jpg
 .env
 venv

@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "files.autoSave": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.organizeImports": "explicit"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
+}
