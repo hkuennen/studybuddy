@@ -5,3 +5,7 @@ select = ["E", "F", "W", "I"]
 fixable = ["E", "F", "I"]
 unfixable = []
 exclude = ["venv", "migrations"]
+
+[tool.djlint]
+profile = "django"
+ignore = "H006,H023,H029,H031,T002"
