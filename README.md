@@ -20,3 +20,7 @@ The app allows users to engage in discussions by creating and joining chat rooms
 - **Categorized Topics** – Browse rooms organized by relevant subjects.  
 
 This project serves as a practical exercise in building a social discussion platform while refining skills in Django, database management, and frontend styling.  
+
+## WebApp
+
+[![StudyBuddy](static/images/thumbnail.png)]()
