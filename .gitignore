@@ -6,7 +6,8 @@ __pycache__/
 db.sqlite3
 *.log
 media/*
-.env
+.env.development
+.env.production
 venv
 staticfiles
 launchctl.md
