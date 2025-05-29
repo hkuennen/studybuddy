@@ -60,7 +60,7 @@ def registerPage(request):
 
 
 def home(request):
-    q = request.GET.get("q") if request.GET.get("q") != None else ""
+    q = request.GET.get("q") if request.GET.get("q") is not None else ""
     rooms = Room.objects.filter(
         Q(topic__name__icontains=q) | Q(name__icontains=q) | Q(description__icontains=q)
     )
@@ -84,7 +84,7 @@ def room(request, pk):
     participants = room.participants.all()
 
     if request.method == "POST":
-        room_message = Message.objects.create(
+        Message.objects.create(
             user=request.user, room=room, body=request.POST.get("body")
         )
         room.participants.add(request.user)
@@ -195,7 +195,7 @@ def updateUser(request):
 
 
 def topicsPage(request):
-    q = request.GET.get("q") if request.GET.get("q") != None else ""
+    q = request.GET.get("q") if request.GET.get("q") is not None else ""
     topics = Topic.objects.filter(name__icontains=q)
     return render(request, "base/topics.html", {"topics": topics})
 

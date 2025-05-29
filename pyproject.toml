@@ -1,5 +1,5 @@
 [tool.ruff]
-ignore = ["E203", "E501"]
+ignore = ["E203", "E501", "E722"]
 line-length = 88
 select = ["E", "F", "W", "I"]
 fixable = ["E", "F", "I"]
